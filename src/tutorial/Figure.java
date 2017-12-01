@@ -14,7 +14,7 @@ public class Figure implements Serializable {
 	private static final long serialVersionUID = 1L;
 	@Id @GeneratedValue
 	private long id;
-	private int name;
+	private String name;
 	private int nombreCote;
 	private int nombreSommet;
 	private int nombreFace;
@@ -33,11 +33,11 @@ public class Figure implements Serializable {
 		this.id = id;
 	}
 
-	public int getName() {
+	public String getName() {
 		return name;
 	}
 
-	public void setName(int name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
